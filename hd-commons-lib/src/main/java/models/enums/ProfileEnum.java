@@ -1,24 +1,22 @@
-package br.com.rafael.hd_commons_lib.models.enums;
+package models.enums;
 
 import java.util.Arrays;
 
 public enum ProfileEnum {
 
-    PROFILE_ADMIN("ROLE_ADMIN"),
-    PROFILE_CUSTOMER("ROLE_CUSTOMER"),
-    PROFILE_TECHNICIAN("ROLE_TECHNICIAN");
+    ROLE_ADMIN("ROLE_ADMIN"),
+    ROLE_CUSTOMER("ROLE_CUSTOMER"),
+    ROLE_TECHNICIAN("ROLE_TECHNICIAN");
 
-    private String description;
+    private final String description;
 
     ProfileEnum(String description) {
         this.description = description;
     }
 
-
     public String getDescription() {
         return description;
     }
-
 
     public static ProfileEnum toEnum(final String description) {
         return Arrays.stream(ProfileEnum.values())
