@@ -5,3 +5,8 @@ spring:
     mongodb:
       uri: 'mongodb+srv://help-desk-user:help-desk-user@clusterhelpdesk.yszp3.mongodb.net/helpdeskdb?retryWrites=true&w=majority&appName=ClusterHelpDesk'
       auto-index-creation: true
+springdoc:
+  openapi:
+    title: 'user service api'
+    description: 'Component responsible for user management created on formacao backend expert'
+    version: '1.0.0'
