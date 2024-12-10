@@ -19,7 +19,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private Set<ProfileEnum> profie;
+    private Set<ProfileEnum> profile;
 
 
 }
