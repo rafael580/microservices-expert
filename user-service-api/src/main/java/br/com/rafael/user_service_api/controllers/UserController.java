@@ -14,6 +14,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.validation.Valid;
+
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @Tag(name="UserController", description = "Controller responsible for user operations")
@@ -52,6 +54,6 @@ public interface UserController {
             )
     })
     @PostMapping
-    ResponseEntity<Void> saveUser(@RequestBody final CreateUserRequest createUserRequest);
+    ResponseEntity<Void> saveUser(@Valid @RequestBody final CreateUserRequest createUserRequest);
 
 }
