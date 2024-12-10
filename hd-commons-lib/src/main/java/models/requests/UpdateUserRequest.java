@@ -9,11 +9,11 @@ import models.enums.ProfileEnum;
 import java.util.Set;
 @With
 public record UpdateUserRequest(
-        @Schema(description = "User name", example = "Valdir Cezar")
+        @Schema(description = "User name", example = "Rafael roco")
         @Size(min = 3, max = 50, message = "Name must contain between 3 and 50 characters")
         String name,
 
-        @Schema(description = "User email", example = "valdir@mail.com")
+        @Schema(description = "User email", example = "rafael@mail.com")
         @Email(message = "Invalid email")
         @Size(min = 6, max = 50, message = "Email must contain between 6 and 50 characters")
         String email,
