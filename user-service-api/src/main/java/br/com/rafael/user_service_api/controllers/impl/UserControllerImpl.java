@@ -38,7 +38,7 @@ public class UserControllerImpl  implements UserController {
 
     @Override
     public ResponseEntity<UserResponse> update(String id, UpdateUserRequest updateUserRequest) {
-        return null;
+        return ResponseEntity.ok().body( userService.update(id,updateUserRequest));
     }
 
 
